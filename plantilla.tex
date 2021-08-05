@@ -1,0 +1,54 @@
+%bibliotecas
+\documentclass{article}
+\usepackage{doc}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+
+%Primera cosa siempre para empezar a escribir
+\begin{document}
+%Hacer una imagen
+%\begin{figure}[t]
+%\centering
+%\includegraphics[scale=0.5]{}
+%\end{figure}
+%Empezar un texto
+\title{Mi primer documento en latex}
+\author{Miguel Ángel Roldán}
+\date{}
+\maketitle
+
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+%Secciones enumeradas
+\section{Introduccion}
+Esto es una prueba para ver como se utiliza latex.
+\newline Se utilizar los espacios en blanco.
+
+\section{Methods}%Utilizar referencias
+\label{sec0}
+
+\subsection{Stage 1}
+\label{sec1}
+The first part of the methods
+
+\subsection{Stage 2}
+The second part of the methods
+
+%Crear tablas
+\section{Tabla}
+\begin{tabular}{l|c|c}
+Item & Quantity & Price(\$)\\
+\hline
+Nails & 500 & 0.34 \\
+Wooden boards & 100 & 4.00 \\
+Bricks & 240 & 11.50
+\end{tabular}
+
+\section{Results}
+Here are my results. Referring to section \ref{sec0} and \ref{sec1} on page \pageref{sec1}
+%Parrafo con ecuaciones
+\paragraph{}
+This is the last part of the document. Mi primera ecuación es $1+2=3$ y la segunda $$1+2=3$$
+\end{document}
